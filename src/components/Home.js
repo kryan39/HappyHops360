@@ -12,7 +12,7 @@ class Home extends Component {
 								Happy Hops
 							</h1>
 							<h2 class="subtitle">
-								barhopping. simplified
+								barhopping. simplified.
 							</h2>
 						</div>
 					</div>
