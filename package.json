@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.4.0",
-    "bulma": "file:node_modules/bulma",
+    "bulma": "^0.7.1",
     "bulma-divider": "^1.0.1",
     "bulma-pageloader": "^1.0.1",
     "firebase": "^4.12.1",
