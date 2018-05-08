@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import 'bulma/css/bulma.css'
 
-class Home extends Component {
+class Header extends Component {
 	render() {
 		return (
 			<div id="header">
-				<section class="hero is-medium is-primary is-bold">
+				<section class="hero is-fullheight is-primary is-bold">
 					<div class="hero-body">
 						<div class="container">
 							<h1 class="title">
@@ -14,12 +14,13 @@ class Home extends Component {
 							<h2 class="subtitle">
 								barhopping. simplified.
 							</h2>
+							<a class="button is-primary is-inverted is-outlined">Let's Drink!</a>
 						</div>
 					</div>
-			  </section>
+			    </section>
 			</div>
 		)
 	}
 }
 
-export default Home;
+export default Header;
