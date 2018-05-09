@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import 'bulma/css/bulma.css'
 
-class Header extends Component {
+class Landing extends Component {
 	render() {
 		return (
-			<div id="header">
+			<div id="landing">
 				<section class="hero is-fullheight is-primary is-bold">
 					<div class="hero-body">
 						<div class="container">
@@ -23,4 +23,4 @@ class Header extends Component {
 	}
 }
 
-export default Header;
+export default Landing;
