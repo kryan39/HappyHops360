@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 class Bars extends Component {
-    state = {
-        bars= []
-    }
+  state = {
+    bars= []
+  }
 }
 
 export default Bars;
