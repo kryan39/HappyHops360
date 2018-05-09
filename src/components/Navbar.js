@@ -4,15 +4,30 @@ import 'bulma/css/bulma.css'
 class Navbar extends Component {
   render() {
     return ( 
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+      <nav className="navbar is-link" aria-label="main navigation">
+        <div className="navbar-brand">
+          <div className="navbar-item">
+            <button className="button is-link is-inverted">
+              Happy Hops
+            </button>
+   
+          </div>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
+
+      <div className="navbar-start">
+        <div className="navbar-item">
+          <button className="button is-link">
+              All Bars
+          </button>
+        </div>
+      </div>
+     </nav>
+
+
+
     )
   }
 }
