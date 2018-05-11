@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import 'bulma/css/bulma.css'
-
+import '../App.css'
 class Landing extends Component {
 	render() {
 		return (
 			<div id="landing">
+
 				<section class="hero is-fullheight is-primary is-bold">
 					<div class="hero-body">
 						<div class="container">
@@ -14,10 +16,12 @@ class Landing extends Component {
 							<h2 class="subtitle">
 								barhopping. simplified.
 							</h2>
-							<a class="button is-primary is-inverted is-outlined">Let's Drink!</a>
+							<Link to='/neighborhoods'>
+								<a class="button is-primary is-inverted is-outlined">Let's Drink!</a>
+							</ Link>
 						</div>
 					</div>
-			    </section>
+			  </section>
 			</div>
 		)
 	}

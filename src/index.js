@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-//import { createStore } from 'redux';
-//import myApp from './reducers';
-//import Root from './components/Root'
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render((
+<BrowserRouter>
+<App />
+</BrowserRouter>), document.getElementById('root'));
 registerServiceWorker();
 
