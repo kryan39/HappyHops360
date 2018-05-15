@@ -1,24 +1,35 @@
 import React, { Component } from 'react';
 
 class Neighborhoods extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			inputvalue: ''
+		}
+	}
+
+	handleChange(event) {
+		this.setState({
+			inputvalue: event.target.value
+		});
+	}
+
+	handleSubmit (event) {
+		console.log('Form value: ' + this.state.inputvalue);
+		event.preventDefault();
+	}
+
 	render () {
 		return (
-			<aside class="menu">
-				<p class="menu-label">
-					District
-				</p>
-				<ul class="menu-list">
-					<li><a>Far North Side</a></li>
-					<li><a>Northwest Side</a></li>
-					<li><a>North Side</a></li>
-					<li><a>West Side</a></li>
-					<li><a>Central</a></li>
-					<li><a>Southwest Side</a></li>
-					<li><a>South Side</a></li>
-					<li><a>Far Southwest Side</a></li>
-					<li><a>Far Southeast Side</a></li>
-				</ul>
-			</aside>
+			<div id="field">
+				<div className="box">
+					<form onSubmit={this.handleSubmit.bind(this)}>
+						<input type="text" className="input is-rounded" placeholder="neighborhood" value={this.state.inputvalue} onChange={this.handleChange.bind(this)}/>
+						<input className="button is-primary" type="submit" value="Search" />
+					</form>
+				</div>
+			</div>
 		);
 	}
 }
