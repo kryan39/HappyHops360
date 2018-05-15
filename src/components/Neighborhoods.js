@@ -7,6 +7,8 @@ class Neighborhoods extends Component {
 		this.state = {
 			inputvalue: ''
 		}
+		this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
 	handleChange(event) {
@@ -22,10 +24,11 @@ class Neighborhoods extends Component {
 
 	render () {
 		return (
+
 			<div id="field">
 				<div className="box">
-					<form onSubmit={this.handleSubmit.bind(this)}>
-						<input type="text" className="input is-rounded" placeholder="neighborhood" value={this.state.inputvalue} onChange={this.handleChange.bind(this)}/>
+					<form onSubmit={this.handleSubmit}>
+						<input type="text" className="input is-rounded" placeholder="neighborhood" value={this.state.inputvalue} onChange={this.handleChange}/>
 						<input className="button is-primary" type="submit" value="Search" />
 					</form>
 				</div>

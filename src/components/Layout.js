@@ -1,11 +1,16 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import Navbar from './Navbar';
+import Neighborhoods from './Neighborhoods'
 class Layout extends Component {
 
   render() {
-    <div id="layout">
+    return(
+      <div id="layout">
       <Navbar />
       <Neighborhoods />
     </div>
+    )
   }
 }
+
+export default Layout;
