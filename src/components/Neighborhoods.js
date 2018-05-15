@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App.css'
 
 class Neighborhoods extends Component {
 
@@ -24,7 +25,6 @@ class Neighborhoods extends Component {
 
 	render () {
 		return (
-
 			<div id="field">
 				<div className="box">
 					<form onSubmit={this.handleSubmit}>
