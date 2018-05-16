@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Bars from './Bars';
 
 class Neighborhoods extends Component {
 
@@ -32,6 +33,7 @@ class Neighborhoods extends Component {
 						<input className="button is-primary" type="submit" value="Search" />
 					</form>
 				</div>
+				<Bars />
 			</div>
 		);
 	}

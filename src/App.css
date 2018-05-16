@@ -2,4 +2,13 @@
   text-align: center;
 }
 
+#barContainer {
+  margin-right: 400px;
+  
+}
+
+#barBox {
+  width: 400px;
+  height: auto;
+}
 
