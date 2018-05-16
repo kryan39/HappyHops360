@@ -2,6 +2,7 @@
   "name": "happyhops",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "ajv": "^6.4.0",
     "bulma": "^0.7.1",

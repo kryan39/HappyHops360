@@ -12,11 +12,11 @@ class Landing extends Component {
 							<h1 className="title">
 								Happy Hops
 							</h1>
-							<h2 class="subtitle">
+							<h2 className="subtitle">
 								barhopping. simplified.
 							</h2>
-							<Link to='/neighborhoods'>
-								<a className="button is-primary is-inverted is-outlined">Let's Drink!</a>
+							<Link className="button is-primary is-inverted is-outlined" to='/neighborhoods'>
+								Let's Drink!
 							</Link>
 						</div>
 					</div>

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css'
-
+import Bars from './Bars.js'
 class Neighborhoods extends Component {
 
 	constructor(props) {
 		super(props);
+		
 		this.state = {
 			inputvalue: ''
 		}
@@ -32,6 +33,7 @@ class Neighborhoods extends Component {
 						<input className="button is-primary" type="submit" value="Search" />
 					</form>
 				</div>
+				<Bars location={this.state.inputvalue} />
 			</div>
 		);
 	}
