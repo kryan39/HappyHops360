@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Bars from './Bars';
-
+import '../App.css'
+import Bars from './Bars.js'
 class Neighborhoods extends Component {
 
 	constructor(props) {
@@ -19,13 +19,12 @@ class Neighborhoods extends Component {
 	}
 
 	handleSubmit (event) {
-		console.log('Form value: ' + this.state.inputvalue);
 		event.preventDefault();
+		console.log('Form value: ' + this.state.inputvalue);
 	}
 
 	render () {
 		return (
-
 			<div id="field">
 				<div className="box">
 					<form onSubmit={this.handleSubmit}>
@@ -33,7 +32,7 @@ class Neighborhoods extends Component {
 						<input className="button is-primary" type="submit" value="Search" />
 					</form>
 				</div>
-				<Bars />
+				<Bars location={this.state.inputvalue} />
 			</div>
 		);
 	}
