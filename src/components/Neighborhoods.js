@@ -5,7 +5,6 @@ class Neighborhoods extends Component {
 
 	constructor(props) {
 		super(props);
-		
 		this.state = {
 			inputvalue: ''
 		}
