@@ -10,24 +10,19 @@ class Navbar extends Component {
             <button className="button is-link is-inverted">
               Happy Hops
             </button>
-   
           </div>
           <span></span>
           <span></span>
           <span></span>
         </div>
-
-      <div className="navbar-start">
-        <div className="navbar-item">
-          <button className="button is-link">
+        <div className="navbar-start">
+          <div className="navbar-item">
+            <button className="button is-link">
               All Bars
-          </button>
+            </button>
+          </div>
         </div>
-      </div>
      </nav>
-
-
-
     )
   }
 }
