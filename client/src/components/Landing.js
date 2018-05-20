@@ -15,7 +15,7 @@ class Landing extends Component {
 							<h2 className="subtitle">
 								barhopping. simplified.
 							</h2>
-							<Link className="button is-primary is-inverted is-outlined" to='/neighborhoods'>
+							<Link className="button is-primary is-inverted is-outlined" to='/search'>
 								Let's Drink!
 							</Link>
 						</div>
