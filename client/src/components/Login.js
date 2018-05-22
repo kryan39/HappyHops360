@@ -37,11 +37,7 @@ class Login extends Component {
         </p>
       </div>
       </div>
-      <div>
-        <p id="signupbutton">
-        Haven't signed up?<br/> <button className="button is-primary is-inverted is-outlined">Sign Up now!</button>
-        </p>
-      </div>
+
       </div>
       )
     }

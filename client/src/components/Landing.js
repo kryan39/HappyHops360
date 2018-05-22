@@ -1,37 +1,16 @@
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
+import injectSheet from 'react-jss';
 import { Link } from "react-router-dom";
-import 'bulma/css/bulma.css'
+import 'bulma/css/bulma.css';
 import '../App.css';
-import Login from './Login'
-
-class Popup extends React.Component {
-	render() {
-	  return (
-		<div className='popup'>
-			<Login/>
-		</div>
-	  );
-	}
-  }
+import Login from './Login';
+import Signup from './Signup';
 
 
 class Landing extends Component {
-
-	constructor() {
-		super();
-		this.state = {
-		  showPopup: false
-		};
-	  }
-	  togglePopup() {
-		this.setState({
-		  showPopup: !this.state.showPopup
-		});
-	  }
-
-
 	render() {
+		
 		return (
 			<div id="landing">
 				<section className="hero is-fullheight is-primary is-bold">
@@ -44,12 +23,24 @@ class Landing extends Component {
 								barhopping. simplified.
 							</h2>
 							<Login/>
+							<div>
+        						<p id="signupbutton">
+        							Haven't signed up?<br/> 
+									<Link className="button is-primary is-inverted is-outlined" to="/signup">Sign Up now!</Link>	
+        						</p>
+      						</div>
+							 
+								
 						</div>
 					</div>
 			  </section>
 			</div>
-		)
+		);
 	}
 }
 
-export default Landing;
+
+  
+  export default Landing;
+
+
