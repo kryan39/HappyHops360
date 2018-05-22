@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
 import 'bulma/css/bulma.css';
-import injectSheet from 'react-jss';
 
 class Signup extends Component{
 
