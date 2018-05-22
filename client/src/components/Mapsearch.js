@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import '../App.css'
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
+import Bars from './Bars';
 const { compose, withProps, lifecycle } = require("recompose");
 const { SearchBox } = require("react-google-maps/lib/components/places/SearchBox");
 const _ = require("lodash");
@@ -55,6 +56,7 @@ const MapWithASearchBox = compose(
           this.setState({
             center: nextCenter,
             markers: nextMarkers,
+            places: places
           });
           // refs.map.fitBounds(bounds);
         },
@@ -98,6 +100,7 @@ const MapWithASearchBox = compose(
     {props.markers.map((marker, index) =>
       <Marker key={index} position={marker.position} />
     )}
+    <Bars bars={props.places}/>
   </GoogleMap>
 );
 

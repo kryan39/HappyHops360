@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {Switch, Route} from "react-router-dom"
 import './App.css';
 import Landing from "./components/Landing";
-import Layout from "./components/Layout"
+import Layout from "./components/Layout";
+import Login from "./components/Login";
 class App extends Component {
   render() {
     return (
