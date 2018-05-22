@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-import { Link } from "react-router-dom";
 import 'bulma/css/bulma.css'
 import '../App.css';
 import Login from './Login'
@@ -13,7 +11,7 @@ class Popup extends React.Component {
 		</div>
 	  );
 	}
-  }
+}
 
 
 class Landing extends Component {

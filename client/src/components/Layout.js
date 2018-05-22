@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
-import Map from './Mapsearch'
+import Map from './Mapsearch';
+import Bars from './Bars'
 class Layout extends Component {
 
   render() {
@@ -8,6 +9,7 @@ class Layout extends Component {
       <div id="layout">
       <Navbar />
       <Map/>
+      <Bars />
     </div>
     )
   }
