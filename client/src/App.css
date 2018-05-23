@@ -38,3 +38,21 @@
   text-align: center; 
   padding-top: 40px;
 }
+
+#hopslogo{
+  width: 7%;
+  height: 7%; 
+}
+
+#submit {
+  padding-top: 20px;
+}
+
+#smallhopslogo {
+  width: 22px;
+  height: 60px;
+}
+
+#signupform {
+ margin: auto;
+}
