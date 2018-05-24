@@ -7,7 +7,7 @@ class Navbar extends Component {
       <nav className="navbar is-primary is-bold" aria-label="main navigation">
         <div className="navbar-brand">
           <div className="navbar-item">
-          <img src={logo} id="smallhopslogo" />
+          <img src={logo} alt="smallhopslogo" />
           </div>
           <div className="navbar-item">
             <button className="button is-primary is-inverted is-outlined">
