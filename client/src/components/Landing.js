@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
+import PropTypes from 'prop-types';
+=======
+>>>>>>> 391d4cf4dedc2e71a662b17e578479ac21d28a61
 import { Link } from "react-router-dom";
 import Signup from './Signup';
+<<<<<<< HEAD
+import logo from '../HappyHopsLogo.png'
+=======
 import 'bulma/css/bulma.css'
 import '../App.css';
 import Login from './Login'
@@ -15,6 +22,7 @@ class Popup extends React.Component {
 	}
 }
 
+>>>>>>> 391d4cf4dedc2e71a662b17e578479ac21d28a61
 
 class Landing extends Component {
 	render() {
@@ -24,6 +32,7 @@ class Landing extends Component {
 				<section className="hero is-fullheight is-primary is-bold">
 					<div className="hero-body">
 						<div className="container">
+			 					<img src={logo} id="hopslogo" />
 							<h1 className="title">
 								Happy Hops
 							</h1>

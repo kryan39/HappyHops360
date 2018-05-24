@@ -7,30 +7,54 @@ class Signup extends Component{
 
     render () {
     return (
-       <div>
-        <section className="hero">
-          <div className="hero-body">
-            <p className="title has-text-centered">
-              Registration
+       
+        <section className="hero is-fullheight is-medium is-primary is-bold">
+        <div id="signupform">
+        <p className="title has-text-centered">
+              Sign up!
             </p>
-            <p className="subtitle has-text-centered">
-              Please Register to access DePaul Degree Planner
-            </p>
-          </div>
-        </section>
-
+         <div className="hero-body">
         <nav className="level">
           <div className="level-item">
             <form onSubmit={this.handleSubmit}>
-              <div className="field">
-                <label className="label">Name</label>
-                <div className="control has-icons-right">
+              <div class="field">
+              <p class="control has-icons-left has-icons-right">
+              <label className="subtitle">Name</label>
+                <div class="control  has-icons-right">
+                  <input class="input is-primary" type="text" placeholder="Name"></input>
                 </div>
+                </p>
+              </div>
+
+            <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <label className="subtitle">Email</label>
+                <div class="control  has-icons-right">
+                  <input class="input is-primary" type="text" placeholder="Email"></input>
                 </div>
+              </p>
+              </div>
+
+              <div class="field">
+              <p class="control has-icons-left has-icons-right">
+              <label className="subtitle">Password</label>
+                <div class="control  has-icons-right">
+                  <input class="input is-primary" type="text" placeholder="Password"></input>
+                </div>
+              </p>
+              </div>
+              <p id="submit">
+									<Link className="button is-primary is-inverted is-outlined" to="/search">Let's Drink!</Link>	
+        						</p>
             </form>
         </div>
       </nav>
-    </div>
+      </div>
+      </div>
+      </section>
+    
+    
+  
    
     );
   }
