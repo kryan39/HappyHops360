@@ -1,18 +1,35 @@
 import React, { Component } from 'react';
-import {Switch, Route} from "react-router-dom"
+//import {Switch, Route} from "react-router-dom"
 import './App.css';
 import Landing from "./components/Landing";
 import Layout from "./components/Layout";
-import Signup from "./components/Signup";
+import fire from "./config/Fire";
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      user:{}
+    }
+  }
+
+  componentDidMount() {
+    this.authListener();
+  }
+
+  authListener() {
+    fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({user});
+      } else {
+        this.setState({user: null});
+      }
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <Switch>
-          <Route exact path='/' component={Landing}/>
-          <Route path='/search' component={Layout} />
-          <Route path='/signup' component={Signup}/>
-        </Switch>
+        {this.state.user ? (<Layout/>) : (<Landing/>)}
       </div>
     );
   }
