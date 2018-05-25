@@ -3,39 +3,40 @@ import { Link } from "react-router-dom";
 import 'bulma/css/bulma.css';
 import '../App.css';
 
-
 class Login extends Component {
   render() {
-      return(
+    return(
       <div className="login">
-        <div id="input">
-          <h1 className="subtitle" id="login">Please Login</h1>
-          <div class="field">
-            <p class="control has-icons-left has-icons-right">
-              <input class="input" type="email" placeholder="Email"/>
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-              <span class="icon is-small is-right">
-               <i class="fas fa-check"></i>
-              </span>
-            </p>
-            <p class="control has-icons-left">
-              <input class="input" type="password" placeholder="Password"/>
-              <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
-              </span>
-            </p>
-          </div>
-          <p class="control">
-            <Link className="button is-primary is-inverted is-outlined" to="/search">
-              Let's Drink!
-            </Link>
+        <div className="field">
+          <p className="control has-icons-left has-icons-right">
+            <input className="input" type="email" placeholder="Email"/>
+            <span className="icon is-small is-left">
+              <i className="fas fa-envelope"></i>
+            </span>
+            <span className="icon is-small is-right">
+              <i className="fas fa-check"></i>
+            </span>
           </p>
         </div>
+        <div className="field">
+          <p className="control has-icons-left">
+            <input className="input" type="password" placeholder="Password"/>
+            <span className="icon is-small is-left">
+              <i className="fas fa-lock"></i>
+            </span>
+          </p>
+        </div>
+        <div className="field">
+          <p className="control">
+            <button className="button is-success">
+              Login
+            </button>
+          </p>
+        </div>
+        <Link className="button is-primary is-inverted is-outlined" to="/search"> Let's Drink! </Link>
       </div>
     )
   }
 }
 
-export default Login
+export default Login;

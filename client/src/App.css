@@ -12,25 +12,15 @@
   height: auto;
 }
 
-#field {
-  margin: auto;
-  padding: 10px;
-  text-align: center;
-  width: 50%;
-}
 
-#input {
+
+.login {
   margin: auto;
   padding: 20px;
   width: 40%;
   border: .02in;
   border-style: solid;
-  border-color: white;
-  
-}
-
-#login {
-  text-align: left;
+  border-color: white;  
 }
 
 #signupbutton {
@@ -40,8 +30,8 @@
 }
 
 #hopslogo{
-  width: 7%;
-  height: 7%; 
+  width: 5%;
+  height: 5%; 
 }
 
 #submit {

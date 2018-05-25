@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 import 'bulma/css/bulma.css';
 
 class Signup extends Component{
-
     render () {
-    return (
-       
+      return (
         <section className="hero is-fullheight is-medium is-primary is-bold">
         <div id="signupform">
         <p className="title has-text-centered">
@@ -21,7 +19,7 @@ class Signup extends Component{
               <p class="control has-icons-left has-icons-right">
               <label className="subtitle">Name</label>
                 <div class="control  has-icons-right">
-                  <input class="input is-primary" type="text" placeholder="Name"></input>
+                  <input class="input is-primary" type="text" placeholder="username"></input>
                 </div>
                 </p>
               </div>

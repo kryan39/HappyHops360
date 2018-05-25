@@ -15,10 +15,8 @@ class Landing extends Component {
 							<h2 className="subtitle"> barhopping. simplified. </h2>
 							<Login/>
 							<div className="signup">
-								<p>
-									Haven't signed up? 
-								</p>
-								<Link className="button is-primary is-inverted is-outlined" to="/signup">Sign Up now!</Link>	
+								<p>Don't have an account?</p>
+								<Link className="button is-primary is-inverted is-outlined" to="/signup">Sign Up!</Link>	
 							</div>
 						</div>
 					</div>
@@ -29,5 +27,3 @@ class Landing extends Component {
 }
 
 export default Landing;
-
-
