@@ -9,7 +9,7 @@ class Layout extends Component {
     return(
       <div id="layout">
       <Navbar />
-      <Map/>
+      <Map />
     </div>
     )
   }

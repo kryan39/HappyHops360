@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bulma/css/bulma.css'
-import logo from '../HappyHopsLogo.png';
+import logo from '../assets/HappyHopsLogo.png';
 class Navbar extends Component {
   render() {
     return ( 
