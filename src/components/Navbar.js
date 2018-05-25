@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import 'bulma/css/bulma.css'
-import logo from '../HappyHopsLogo.png';
+import logo from '../assets/HappyHopsLogo.png';
 class Navbar extends Component {
   render() {
     return ( 
       <nav className="navbar is-primary is-bold" aria-label="main navigation">
         <div className="navbar-brand">
           <div className="navbar-item">
-          <img src={logo} id="smallhopslogo" />
+          <img src={logo} alt="smallhopslogo" />
           </div>
           <div className="navbar-item">
             <button className="button is-primary is-inverted is-outlined">
