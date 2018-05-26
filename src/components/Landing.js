@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import Login from './Login'
 import logo from '../assets/HappyHopsLogo.png'
 
@@ -14,10 +13,6 @@ class Landing extends Component {
 							<h1 className="title"> Happy Hops </h1>
 							<h2 className="subtitle"> barhopping. simplified. </h2>
 							<Login/>
-							<div className="signup">
-								<p>Don't have an account?</p>
-								<Link className="button is-primary is-inverted is-outlined" to="/signup">Sign Up!</Link>	
-							</div>
 						</div>
 					</div>
 			  </section>

@@ -1,3 +1,5 @@
+import firebase from "firebase"
+
 const config = {
   apiKey: "AIzaSyAlVlcnwcJWQUtvHf4X1aLF97MPPABPcvA",
   authDomain: "happy-hops.firebaseapp.com",
