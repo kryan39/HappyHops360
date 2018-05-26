@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
+import fire from '../config/Fire'
 import 'bulma/css/bulma.css'
 import logo from '../assets/HappyHopsLogo.png';
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.logout = this.logout.bind(this);
+  }
+
+  logout() {
+    fire.auth().signOut();
+  }
+  
   render() {
     return ( 
       <nav className="navbar is-primary is-bold" aria-label="main navigation">
@@ -18,10 +28,10 @@ class Navbar extends Component {
           <span></span>
           <span></span>
         </div>
-        <div className="navbar-start">
+        <div className="navbar-end">
           <div className="navbar-item">
-            <button className="button is-primary is-inverted is-outlined">
-              All Bars
+            <button onClick={this.logout} className="button is-primary is-inverted is-outlined">
+              sign out
             </button>
           </div>
         </div>
