@@ -13,13 +13,18 @@ class Bars extends Component {
 
   render() {
     return (
+      <table className="table">
       <section className="hero is-fullheight is-primary is-bold">
       <div className="barlist">
+     
         {this.props.bars.map((bar, index) => (
-            <Bar key={index} {...bar}/>
+          <tr>
+           <td><Bar key={index} {...bar}/></td>
+          </tr>
         ))}
       </div>
     </section>
+    </table>
     )
   }  
 }
