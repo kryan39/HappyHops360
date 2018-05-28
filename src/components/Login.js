@@ -13,6 +13,7 @@ class Login extends Component {
     }
     this.login = this.login.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.signup = this.signup.bind(this);
   }
 
   login(e) {
@@ -21,6 +22,15 @@ class Login extends Component {
     }).catch((error) => {
       console.log(error);
     });
+  }
+
+  signup(e) {
+    e.preventDefault();
+    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+    }).then((u)=>{console.log(u)})
+    .catch((error) => {
+        console.log(error);
+      })
   }
 
   handleChange(e) {
@@ -59,7 +69,7 @@ class Login extends Component {
           </div>
           <div className="signup">
             <p>Don't have an account?</p>
-            <Link className="button is-primary is-inverted is-outlined" to="/signup">Sign Up!</Link>	
+            <button onClick={this.signup} className="button is-primary is-inverted">Sign Up!</button>	
           </div>
         </form>
       </div>
