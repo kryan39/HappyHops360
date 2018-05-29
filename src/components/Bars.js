@@ -21,6 +21,7 @@ class Bars extends Component {
 
     var counter = 0;
 
+
     return (
       <section className="hero is-fullheight is-primary is-bold">
       <div className="barlist">
