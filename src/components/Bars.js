@@ -12,6 +12,15 @@ class Bars extends Component {
 
 
   render() {
+
+    {var barArray = this.props.bars.map((bar, index) => (
+      <tr>
+        <td><Bar key={index} {...bar}/></td>
+      </tr>
+    ))}
+
+    var counter = 0;
+
     return (
       <section className="hero is-fullheight is-primary is-bold">
       <div className="barlist">
