@@ -10,6 +10,7 @@
 #barBox {
   width: 400px;
   height: auto;
+  margin: 0px;
 }
 
 
@@ -45,4 +46,12 @@
 
 #signupform {
  margin: auto;
+}
+
+
+#barbuttons {
+  background-color:transparent;
+  outline-style: hidden;
+  padding:5px;
+  margin:40px;
 }

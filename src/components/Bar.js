@@ -1,8 +1,7 @@
 import React from 'react';
 
 const bar = (props) => (
-	<section className='section'>
-		<div className='container'>
+	
 			<div id='barBox' className='box'>
 				<article className='media'>
 					<div className='media-content'>
@@ -16,8 +15,7 @@ const bar = (props) => (
 					</div>
 				</article>
 			</div>
-		</div>
-	</section> 
+
 )
 
 export default bar;
