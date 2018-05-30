@@ -12,21 +12,46 @@ class Bars extends Component {
 
 
   render() {
+
+    {var barArray = this.props.bars.map((bar, index) => (
+      <tr>
+        <td><Bar key={index} {...bar}/></td>
+      </tr>
+    ))}
+
+    var counter = 0;
+
+
     return (
-      <table className="table">
       <section className="hero is-fullheight is-primary is-bold">
       <div className="barlist">
-     
-        {this.props.bars.map((bar, index) => (
-          <tr>
-           <td><Bar key={index} {...bar}/></td>
-          </tr>
-        ))}
+
+      <div class="columns">
+        <div class="column is-one-third">
+          <p>{barArray[counter++]}</p>
+          <p>{barArray[counter++]}</p>
+          <p>{barArray[counter++]}</p>
+          <p>{barArray[counter++]}</p>
+        </div>
+        <div class="column is-one-third">
+          <p>{barArray[counter++]}</p>
+          <p>{barArray[counter++]}</p>
+          <p>{barArray[counter++]}</p>
+          <p>{barArray[counter++]}</p>
+        </div>
+        <div class="column is-one-third">
+          <p>{barArray[counter++]}</p>
+          <p>{barArray[counter++]}</p>
+          <p>{barArray[counter++]}</p>
+          <p>{barArray[counter++]}</p>
+        </div>
       </div>
+
+
+    </div>
     </section>
-    </table>
     )
-  }  
+  }
 }
 
 export default Bars;
