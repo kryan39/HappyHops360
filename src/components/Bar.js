@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Popup from 'reactjs-popup';
 import Modal from 'react-responsive-modal';
+import '../App.css'
 
 class Bar extends Component {
 	constructor(props) {
@@ -22,8 +23,13 @@ class Bar extends Component {
 
 	render() {
 		return (
-			<div id='barBox' className='box'>
-				<Modal id="modal" open={this.state.open} onClose={this.onCloseModal} classNames={{modal: 'custom-modal' }}>
+			<div className='box'>
+				<Modal	
+					id="modal" 
+					open={this.state.open} 
+					onClose={this.onCloseModal} 
+					classNames={{ overlay: 'custom-overlay', modal: 'custom-modal' }}
+				>
 					<div style={{float: "left"}}>
 						<h2 style={{textAlign: "center"}}>Name: {this.props.name}</h2>
 					</div>
@@ -33,15 +39,7 @@ class Bar extends Component {
 					</div>
 					<br/>
 					<div style={{float: "left"}}>
-						<h2 style={{textAlign: "center"}}>Website:</h2>
-					</div>
-					<br/>
-					<div style={{float: "left"}}>
-						<h2 style={{textAlign: "center"}}>Location:</h2>
-					</div>
-					<br/>
-					<div style={{float: "left"}}>
-						<h2 style={{textAlign: "center"}}>Reviews:</h2>
+						<h2 style={{textAlign: "center"}}>Rating: {this.props.rating}</h2>
 					</div>
 					<br/>
         </Modal>
@@ -55,7 +53,6 @@ class Bar extends Component {
 								<p>
 									{this.props.formatted_address}
 								</p>
-								{this.props.rating} stars
 							</div>
 						</div>
 					</article>
