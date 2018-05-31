@@ -12,9 +12,11 @@
 }
 
 .custom-modal {
-  background: #b2dbbf;
+  border-radius: 25px;
   max-width: 500px;
   width: 100%;
+  border-style: hidden;
+  font-size: 20px; 
 }
 
 .right_barlist {
@@ -58,8 +60,17 @@
 
 
 #barbuttons {
-  background-color:transparent;
+  background-color:transparent; 
   outline-style: hidden;
   padding:5px;
-  margin:40px;
+  margin:10px;
+  
+}
+
+#barBox {
+  font-size: 11px;
+  padding-top: 35px;
+  width: 400px;
+  height: 130px;
+  margin: 0px;
 }

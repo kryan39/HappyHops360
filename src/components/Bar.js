@@ -23,7 +23,7 @@ class Bar extends Component {
 
 	render() {
 		return (
-			<div className='box'>
+			<div className="column">
 				<Modal	
 					id="modal" 
 					open={this.state.open} 
@@ -31,7 +31,7 @@ class Bar extends Component {
 					classNames={{ overlay: 'custom-overlay', modal: 'custom-modal' }}
 				>
 					<div style={{float: "left"}}>
-						<h2 style={{textAlign: "center"}}>Name: {this.props.name}</h2>
+						<h1 style={{textAlign: "center"}}><strong>{this.props.name}</strong></h1>
 					</div>
 					<br/>
 					<div style={{float: "left"}}>
@@ -44,18 +44,20 @@ class Bar extends Component {
 					<br/>
         </Modal>
 				<button id="barbuttons" onClick={()=> this.onOpenModal()}>
+				<div id="barBox" className='box'>
 					<article className='media'>
 						<div className='media-content'>
 							<div className='content'>
-								<p>
-									<strong>{ this.props.name }</strong>
-								</p>
-								<p>
+								<h1>
+									{ this.props.name }
+								</h1>
+								<h4>
 									{this.props.formatted_address}
-								</p>
+								</h4>
 							</div>
 						</div>
 					</article>
+					</div>
 			 	</button>
 			</div>
 		)
