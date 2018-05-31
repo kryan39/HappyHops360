@@ -11,15 +11,17 @@ class Bars extends Component {
   
   render() {
     return (
-      <section className="hero is-fullheight is-primary is-bold">
-        <div className="barlist">     
-          <div className="column is-one-third">
-            {this.props.bars.map((bar, index) => (
-             <Bar key={index} {...bar}/> )
-            )} 
+      <div className="right_barlist">
+        <section className="hero is-fullheight is-primary is-bold">
+          <div className="barlist">     
+            <div className="column">
+              {this.props.bars.map((bar, index) => (
+                <Bar key={index} {...bar}/> )
+              )} 
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     )
   }
 }
