@@ -9,18 +9,51 @@ class Login extends Component {
     super(props);
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      registerrror: null
     }
     this.login = this.login.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.signup = this.signup.bind(this);
   }
 
+
+  handleErrorMsg(error) {
+    switch(error.message) {
+      case "The email address is badly formatted.":
+        return {
+          email: "is-danger",
+          password: "is-info",
+          registerError: error.message
+        }
+      case "There is no user record corresponding to this identifier. The user may have been deleted.":
+        return {
+          email: "is-danger",
+          password: "is-info",
+          registerError: "No User found"
+        }
+      case "The password is invalid or the user does not have a password.":
+        return {
+          password: "is-danger",
+          email: "is-info",
+          registerError: "Invalid Password"
+        }
+      default:
+        return {
+          password: "",
+          email: "",
+          registerError: error.message
+        }
+    }
+  }
+
+
   login(e) {
     e.preventDefault();
     fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
     }).catch((error) => {
       console.log(error);
+      this.setState(this.handleErrorMsg(error));
     });
   }
 
@@ -30,6 +63,7 @@ class Login extends Component {
     }).then((u)=>{console.log(u)})
     .catch((error) => {
         console.log(error);
+        this.setState(this.handleErrorMsg(error));
       })
   }
 
@@ -47,17 +81,26 @@ class Login extends Component {
               <span className="icon is-small is-left">
                 <i className="fas fa-envelope"></i>
               </span>
-              <span className="icon is-small is-right">
-                <i className="fas fa-check"></i>
-              </span>
+              {
+                 this.state.email === "is-danger" &&
+                 <span className="icon is-medium is-right">
+                  <i className="fa fa-exclamation-triangle"></i>
+                  </span>
+                        }
             </p>
           </div>
           <div className="field">
-            <p className="control has-icons-left">
+            <p className="control has-icons-left has-icons-right">
               <input value={this.state.password} onChange={this.handleChange} className="input" name="password" type="password" placeholder="Password"/>
               <span className="icon is-small is-left">
                 <i className="fas fa-lock"></i>
               </span>
+              {
+                  this.state.password === "is-danger" &&
+                  <span className="icon is-medium is-right">
+                  <i className="fa fa-exclamation-triangle"></i>
+                  </span>
+                        }
             </p>
           </div>
           <div className="field">
@@ -71,7 +114,12 @@ class Login extends Component {
             <p>Don't have an account?</p>
             <button onClick={this.signup} className="button is-primary is-inverted">Sign Up!</button>	
           </div>
+
         </form>
+        {
+           this.state.registerError &&
+           <p className="help is-danger">Error: {this.state.registerError}</p>
+                    }
       </div>
     )
   }
