@@ -22,20 +22,20 @@ class Login extends Component {
     switch(error.message) {
       case "The email address is badly formatted.":
         return {
-          email: "is-danger",
-          password: "is-info",
+          email: "invalid",
+          password: "invalid",
           registerError: error.message
         }
       case "There is no user record corresponding to this identifier. The user may have been deleted.":
         return {
-          email: "is-danger",
-          password: "is-info",
+          email: "invalid",
+          password: "invalid",
           registerError: "No User found"
         }
       case "The password is invalid or the user does not have a password.":
         return {
-          password: "is-danger",
-          email: "is-info",
+          password: "invalid",
+          email: "invalid",
           registerError: "Invalid Password"
         }
       default:
@@ -82,7 +82,7 @@ class Login extends Component {
                 <i className="fas fa-envelope"></i>
               </span>
               {
-                 this.state.email === "is-danger" &&
+                 this.state.email === "invalid" &&
                  <span className="icon is-medium is-right">
                   <i className="fa fa-exclamation-triangle"></i>
                   </span>
@@ -96,7 +96,7 @@ class Login extends Component {
                 <i className="fas fa-lock"></i>
               </span>
               {
-                  this.state.password === "is-danger" &&
+                  this.state.password === "invalid" &&
                   <span className="icon is-medium is-right">
                   <i className="fa fa-exclamation-triangle"></i>
                   </span>
