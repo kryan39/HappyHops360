@@ -27,9 +27,6 @@ const MapWithASearchBox = compose(
         onMapMounted: ref => {
           refs.map = ref;
         },
-        onClick: ref => {
-          refs.map = ref;
-        },
         onBoundsChanged: () => {
           this.setState({
             bounds: refs.map.getBounds(),
