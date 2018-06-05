@@ -27,55 +27,6 @@ class Navbar extends Component {
               Happy Hops
             </button>
           </div>
-
-          <div className="navbar-item is-1">
-            <button className="button is-primary is-inverted">
-              Lake View
-            </button>
-          </div>
-
-          <div className="navbar-item is-1">
-            <button className="button is-primary is-inverted">
-              Roscoe Village
-            </button>
-          </div>
-
-          <div className="navbar-item is-1">
-            <button className="button is-primary is-inverted">
-              River North
-            </button>
-          </div>
-
-          <div className="navbar-item is-1">
-            <button className="button is-primary is-inverted">
-              Wicker Park
-            </button>
-          </div>
-
-          <div className="navbar-item is-1">
-            <button className="button is-primary is-inverted">
-              Logan Square
-            </button>
-          </div>
-
-          <div className="navbar-item is-1">
-            <button className="button is-primary is-inverted">
-              Old Town
-            </button>
-          </div>
-
-          <div className="navbar-item is-1">
-            <button className="button is-primary is-inverted">
-              West Loop
-            </button>
-          </div>
-
-          <div className="navbar-item is-1">
-            <button className="button is-primary is-inverted">
-              Gold Coast
-            </button>
-          </div>
-
         </div>
         <div className="navbar-end">
           <div className="navbar-item">
