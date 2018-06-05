@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import fire from '../config/Fire'
 import 'bulma/css/bulma.css'
 import logo from '../assets/HappyHopsLogo.png';
+import Map from './Mapsearch';
+
 class Navbar extends Component {
   constructor(props) {
     super(props);

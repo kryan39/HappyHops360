@@ -27,6 +27,9 @@ const MapWithASearchBox = compose(
         onMapMounted: ref => {
           refs.map = ref;
         },
+        onClick: ref => {
+          refs.map = ref;
+        },
         onBoundsChanged: () => {
           this.setState({
             bounds: refs.map.getBounds(),
@@ -81,7 +84,7 @@ const MapWithASearchBox = compose(
       <input
 				type="text"
 				className="input is-rounded"
-        placeholder="neighborhood"
+        defaultValue="bars in "
         style={{
           boxSizing: `border-box`,
           border: `1px solid transparent`,
